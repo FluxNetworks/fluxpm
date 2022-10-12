@@ -1403,6 +1403,36 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fluxpm/rich-markdown-editor@^11.0.10":
+  version "11.7.0"
+  resolved "https://registry.yarnpkg.com/@fluxpm/rich-markdown-editor/-/rich-markdown-editor-11.7.0.tgz#0911e39a3514d8fe8ae43348603b07161bf5dbec"
+  integrity sha512-1VAVaqzzBPvjFKS/u/pj9ouzm+OQoDTxRIj5MHkjtGOptJmVeSIhHL70aSaftahbBq1xx8F+RC2xp2nOMqYoZw==
+  dependencies:
+    copy-to-clipboard "^3.0.8"
+    lodash "^4.17.11"
+    markdown-it-container "^3.0.0"
+    outline-icons "^1.26.1"
+    prosemirror-commands "^1.1.6"
+    prosemirror-dropcursor "^1.3.3"
+    prosemirror-gapcursor "^1.1.5"
+    prosemirror-history "^1.1.3"
+    prosemirror-inputrules "^1.1.3"
+    prosemirror-keymap "^1.1.4"
+    prosemirror-markdown "^1.4.4"
+    prosemirror-model "^1.13.3"
+    prosemirror-schema-list "^1.1.2"
+    prosemirror-state "^1.3.4"
+    prosemirror-tables "^1.1.1"
+    prosemirror-transform "1.2.5"
+    prosemirror-utils "^0.9.6"
+    prosemirror-view "^1.17.6"
+    react-medium-image-zoom "^3.1.3"
+    react-portal "^4.2.1"
+    refractor "^3.3.1"
+    resize-observer-polyfill "^1.5.1"
+    slugify "^1.4.0"
+    smooth-scroll-into-view-if-needed "^1.1.29"
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
@@ -2257,36 +2287,6 @@
   integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
   dependencies:
     defer-to-connect "^1.0.1"
-
-"@fluxpm/rich-markdown-editor@^11.0.10":
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/@fluxpm/rich-markdown-editor/-/rich-markdown-editor-11.7.0.tgz#0911e39a3514d8fe8ae43348603b07161bf5dbec"
-  integrity sha512-1VAVaqzzBPvjFKS/u/pj9ouzm+OQoDTxRIj5MHkjtGOptJmVeSIhHL70aSaftahbBq1xx8F+RC2xp2nOMqYoZw==
-  dependencies:
-    copy-to-clipboard "^3.0.8"
-    lodash "^4.17.11"
-    markdown-it-container "^3.0.0"
-    outline-icons "^1.26.1"
-    prosemirror-commands "^1.1.6"
-    prosemirror-dropcursor "^1.3.3"
-    prosemirror-gapcursor "^1.1.5"
-    prosemirror-history "^1.1.3"
-    prosemirror-inputrules "^1.1.3"
-    prosemirror-keymap "^1.1.4"
-    prosemirror-markdown "^1.4.4"
-    prosemirror-model "^1.13.3"
-    prosemirror-schema-list "^1.1.2"
-    prosemirror-state "^1.3.4"
-    prosemirror-tables "^1.1.1"
-    prosemirror-transform "1.2.5"
-    prosemirror-utils "^0.9.6"
-    prosemirror-view "^1.17.6"
-    react-medium-image-zoom "^3.1.3"
-    react-portal "^4.2.1"
-    refractor "^3.3.1"
-    resize-observer-polyfill "^1.5.1"
-    slugify "^1.4.0"
-    smooth-scroll-into-view-if-needed "^1.1.29"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -6156,11 +6156,9 @@ events@^3.0.0:
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
 
 eventsource@^1.0.7:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.0.tgz#00e8ca7c92109e94b0ddf32dac677d841028cfaf"
-  integrity sha512-VSJjT5oCNrFvCS6igjzPAt5hBzQ2qPBFIbJ03zLI9SE0mxwZpMw6BfJrbFHm1a141AavMEB8JHmBhWAd66PfCg==
-  dependencies:
-    original "^1.0.0"
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.2.tgz#bc75ae1c60209e7cb1541231980460343eaea7c2"
+  integrity sha512-xAH3zWhgO2/3KIniEKYPr8plNSzlGINOUqYj0m0u7AB81iRw8b/3E73W6AuU+6klLbaSFmZnaETQ2lXPfAydrA==
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -9997,13 +9995,6 @@ orderedmap@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/orderedmap/-/orderedmap-1.1.1.tgz#c618e77611b3b21d0fe3edc92586265e0059c789"
   integrity sha512-3Ux8um0zXbVacKUkcytc0u3HgC0b0bBLT+I60r2J/En72cI0nZffqrA7Xtf2Hqs27j1g82llR5Mhbd0Z1XW4AQ==
-
-original@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"
-  integrity sha512-hyBVl6iqqUOJ8FqRe+l/gS8H+kKYjrEndd5Pm1MfBtsEKA038HkkdbAl/72EAXGyonD/PFsvmVG+EvcIpliMBg==
-  dependencies:
-    url-parse "^1.4.3"
 
 os-browserify@^0.3.0:
   version "0.3.0"
@@ -14057,7 +14048,7 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
-url-parse@^1.4.3, url-parse@^1.5.3:
+url-parse@^1.5.3:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.3.tgz#71c1303d38fb6639ade183c2992c8cc0686df862"
   integrity sha512-IIORyIQD9rvj0A4CLWsHkBBJuNqWpFQe224b6j9t/ABmquIS0qDU2pY6kl6AuOrL5OkCXHMCFNe1jBcuAggjvQ==
