@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  migrate:
+    build: .
+    entrypoint: ./fluxpm migrate
+    volumes:
+      - ./migrations:/root/migrations
+    depends_on:
+      - postgres
+    networks:
+      - fluxpm-test

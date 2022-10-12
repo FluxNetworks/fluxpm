@@ -1,0 +1,38 @@
+version: "3"
+services:
+  web:
+    image: fluxpm/fluxpm:latest
+    # build: .
+    ports:
+      - "3333:3333"
+    depends_on:
+      - postgres
+    networks:
+      - fluxpm-test
+    environment:
+      FLUXPM_DATABASE_HOST: postgres
+      FLUXPM_MIGRATE: "true"
+    volumes:
+      - fluxpm-uploads:/root/uploads
+      
+  postgres:
+    image: postgres:12.3-alpine
+    restart: always
+    networks:
+      - fluxpm-test
+    environment:
+      POSTGRES_USER: fluxpm
+      POSTGRES_PASSWORD: fluxpm_test
+      POSTGRES_DB: fluxpm
+    volumes:
+      - fluxpm-postgres:/var/lib/postgresql/data
+
+volumes:
+  fluxpm-postgres:
+    external: false
+  fluxpm-uploads:
+    external: false
+
+networks:
+  fluxpm-test:
+    driver: bridge

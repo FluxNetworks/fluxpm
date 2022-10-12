@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    build: ../
+    ports:
+      - "6677:3333"
+    depends_on:
+      - postgres
+    networks:
+      - fluxpm-dev-test
+    environment:
+      FLUXPM_DATABASE_HOST: postgres
+      FLUXPM_MIGRATE: "true"
+  postgres:
+    image: postgres:12.3-alpine
+    restart: always
+    networks:
+      - fluxpm-dev-test
+    environment:
+      POSTGRES_USER: fluxpm
+      POSTGRES_PASSWORD: fluxpm_test
+      POSTGRES_DB: fluxpm
+
+networks:
+  fluxpm-dev-test:
+    driver: bridge

@@ -1,0 +1,8 @@
+.git
+dist
+uploads
+frontend/node_modules
+internal/frontend/frontend_generated.go
+internal/migrations/migrations_generated.go
+fluxpm
+conf/fluxpm.toml

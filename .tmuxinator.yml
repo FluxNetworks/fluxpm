@@ -1,0 +1,26 @@
+name: fluxpm
+root: .
+
+windows:
+  - services:
+      root: ./
+      panes:
+        - api:
+          - go run cmd/fluxpm/main.go web
+        - yarn:
+          - cd frontend
+          - yarn start
+        - worker:
+          - go run cmd/fluxpm/main.go worker
+  - web/editor:
+      root: ./frontend
+      panes:
+        - vim src/index.tsx
+  - api/editor:
+      root: ./
+      panes:
+        - vim cmd/fluxpm/main.go
+  - database:
+      root: ./
+      panes:
+        - pgcli postgres://fluxpm:fluxpm_test@localhost:8855/fluxpm
